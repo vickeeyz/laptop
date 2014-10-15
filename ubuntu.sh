@@ -68,7 +68,7 @@ sudo apt-get -y install haskell-platform
 sudo apt-get -y install nodejs
 
 # PostgreSQL
-sudo apt-get -y install postgresql postgresql-contrib
+sudo apt-get -y install postgresql postgresql-contrib libpq-dev
 
 # Redis
 sudo apt-get -y install redis-server
