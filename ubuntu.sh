@@ -4,18 +4,18 @@
 
 set -e
 
-# Zsh
-if ! command -v zsh >/dev/null; then
-  sudo apt-get update && sudo apt-get -y install zsh
-fi
-chsh -s $(which zsh)
-
 # Add PPAs
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo add-apt-repository -y ppa:nginx/stable
 
 sudo apt-get update
+
+# Zsh
+if ! command -v zsh >/dev/null; then
+  sudo apt-get -y install zsh
+fi
+chsh -s $(which zsh)
 
 sudo apt-get -y install build-essential libssl-dev
 
