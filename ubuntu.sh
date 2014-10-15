@@ -63,6 +63,7 @@ gem install bundler --no-document
 
 # Haskell
 sudo apt-get -y install haskell-platform
+cabal update
 
 # Node.js
 sudo apt-get -y install nodejs
