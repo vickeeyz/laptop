@@ -22,6 +22,9 @@ sudo apt-get -y install build-essential libssl-dev
 # git
 sudo apt-get -y install git
 
+# Mercurial
+sudo apt-get -y install mercurial
+
 # ag
 sudo apt-get -y install silversearcher-ag
 
