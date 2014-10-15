@@ -12,9 +12,7 @@ sudo add-apt-repository -y ppa:nginx/stable
 sudo apt-get update
 
 # Zsh
-if ! command -v zsh >/dev/null; then
-  sudo apt-get -y install zsh
-fi
+sudo apt-get -y install zsh
 chsh -s $(which zsh)
 
 sudo apt-get -y install build-essential libssl-dev
