@@ -10,6 +10,9 @@ if ! command -v zsh >/dev/null; then
 fi
 chsh -s $(which zsh)
 
+# oh-my-zsh
+curl -L http://install.ohmyz.sh | sh
+
 # Add PPAs
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
