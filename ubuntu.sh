@@ -2,6 +2,8 @@
 
 # Inspired by https://github.com/thoughtbot/laptop
 
+set -e
+
 # Zsh
 if ! command -v zsh >/dev/null; then
   sudo apt-get -y update && sudo apt-get -y install zsh
