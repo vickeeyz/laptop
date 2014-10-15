@@ -31,6 +31,15 @@ sudo apt-get -y install mercurial
 # ag
 sudo apt-get -y install silversearcher-ag
 
+# PostgreSQL
+sudo apt-get -y install postgresql postgresql-contrib libpq-dev
+
+# Redis
+sudo apt-get -y install redis-server
+
+# nginx
+sudo apt-get -y install nginx
+
 # rbenv
 if [[ ! -d ~/.rbenv ]]; then
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -71,12 +80,3 @@ sudo apt-get -y install nodejs
 # Java
 sudo apt-get -y install default-jdk
 sudo apt-get -y install ant
-
-# PostgreSQL
-sudo apt-get -y install postgresql postgresql-contrib libpq-dev
-
-# Redis
-sudo apt-get -y install redis-server
-
-# nginx
-sudo apt-get -y install nginx
