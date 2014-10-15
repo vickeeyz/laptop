@@ -10,9 +10,6 @@ if ! command -v zsh >/dev/null; then
 fi
 chsh -s $(which zsh)
 
-# oh-my-zsh
-curl -L http://install.ohmyz.sh | sh
-
 # Add PPAs
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
@@ -24,6 +21,9 @@ sudo apt-get -y install build-essential libssl-dev
 
 # git
 sudo apt-get -y install git
+
+# oh-my-zsh
+curl -L http://install.ohmyz.sh | sh
 
 # Mercurial
 sudo apt-get -y install mercurial
