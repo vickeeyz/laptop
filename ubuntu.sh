@@ -67,6 +67,10 @@ sudo apt-get -y install haskell-platform
 # Node.js
 sudo apt-get -y install nodejs
 
+# Java
+sudo apt-get -y install default-jdk
+sudo apt-get -y install ant
+
 # PostgreSQL
 sudo apt-get -y install postgresql postgresql-contrib libpq-dev
 
