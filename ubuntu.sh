@@ -11,7 +11,7 @@ sudo add-apt-repository -y ppa:nginx/stable
 
 # Heroku Toolbelt
 if [[ ! -f /etc/apt/sources.list.d/heroku.list ]]; then
-  echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
+  sudo echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
 fi
 wget -O- https://toolbelt.heroku.com/apt/release.key | sudo apt-key add -
 
