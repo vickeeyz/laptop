@@ -9,12 +9,6 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo add-apt-repository -y ppa:nginx/stable
 
-# Heroku Toolbelt
-if [[ ! -f /etc/apt/sources.list.d/heroku.list ]]; then
-  sudo echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
-fi
-wget -O- https://toolbelt.heroku.com/apt/release.key | sudo apt-key add -
-
 sudo apt-get update
 
 # Zsh
@@ -45,7 +39,7 @@ sudo apt-get -y install redis-server
 sudo apt-get -y install nginx
 
 # Heroku Toolbelt
-sudo apt-get install -y heroku-toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # rbenv
 if [[ ! -d ~/.rbenv ]]; then
