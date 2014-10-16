@@ -10,7 +10,7 @@ sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo add-apt-repository -y ppa:nginx/stable
 
 # Heroku Toolbelt
-echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
+sudo echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
 wget -O- https://toolbelt.heroku.com/apt/release.key | sudo apt-key add -
 
 sudo apt-get update
