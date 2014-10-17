@@ -61,10 +61,10 @@ else
 fi
 
 # Ruby
-ruby_version="$(curl -sSL http://ruby.thoughtbot.com/latest)"
+RUBY_VERSION="$(curl -sSL http://ruby.thoughtbot.com/latest)"
 
-rbenv install --skip-existing "$ruby_version"
-rbenv global "$ruby_version"
+rbenv install --skip-existing "$RUBY_VERSION"
+rbenv global "$RUBY_VERSION"
 rbenv rehash
 
 gem update --system # Update the RubyGems system software
