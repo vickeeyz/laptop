@@ -22,7 +22,7 @@ sudo apt-get -y install build-essential libssl-dev
 sudo apt-get -y install git
 
 # oh-my-zsh
-curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | zsh
 
 # Mercurial
 sudo apt-get -y install mercurial
