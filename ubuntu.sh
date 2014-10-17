@@ -81,3 +81,26 @@ sudo apt-get -y install nodejs
 # Java
 sudo apt-get -y install default-jdk
 sudo apt-get -y install ant
+
+# https://gist.github.com/visenger/5496675
+
+SCALA_VERSION=2.11.2
+SBT_VERSION=0.13.5
+
+# Scala
+sudo apt-get -y remove scala-library scala
+
+wget http://www.scala-lang.org/files/archive/scala-${SCALA_VERSION}.deb -P /tmp
+sudo dpkg -i /tmp/scala-${SCALA_VERSION}.deb
+
+sudo apt-get update
+sudo apt-get -y install scala
+
+# sbt
+sudo apt-get -y remove sbt
+
+wget http://dl.bintray.com/sbt/debian/sbt-${SBT_VERSION}.deb -P /tmp
+sudo dpkg -i /tmp/sbt-${SBT_VERSION}.deb
+
+sudo apt-get update
+sudo apt-get -y install sbt
