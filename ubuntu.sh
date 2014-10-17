@@ -81,6 +81,7 @@ OCAML_VERSION=4.01.0
 
 sudo apt-get -y install opam
 
+opam init
 opam switch $OCAML_VERSION
 eval $(opam config env)
 
