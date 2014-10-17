@@ -85,7 +85,7 @@ opam init
 opam switch $OCAML_VERSION
 eval $(opam config env)
 
-opam install core utop
+opam -y install core utop
 
 # Node.js
 sudo apt-get -y install nodejs
