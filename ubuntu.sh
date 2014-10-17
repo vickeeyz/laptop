@@ -8,6 +8,7 @@ set -e
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo add-apt-repository -y ppa:nginx/stable
+sudo add-apt-repository -y ppa:avsm/ppa
 
 sudo apt-get update
 
@@ -74,6 +75,16 @@ gem install bundler --no-document
 # Haskell
 sudo apt-get -y install haskell-platform
 cabal update
+
+# OCaml
+OCAML_VERSION=4.01.0
+
+sudo apt-get -y install opam
+
+opam switch $OCAML_VERSION
+eval $(opam config env)
+
+opam install core utop
 
 # Node.js
 sudo apt-get -y install nodejs
