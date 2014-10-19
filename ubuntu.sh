@@ -16,7 +16,7 @@ sudo apt-get update
 sudo apt-get -y install zsh
 chsh -s $(which zsh)
 
-sudo apt-get -y install build-essential libssl-dev
+sudo apt-get -y install build-essential libssl-dev m4
 
 # git
 sudo apt-get -y install git
