@@ -32,7 +32,7 @@ sudo apt-get -y install mercurial
 sudo apt-get -y install silversearcher-ag
 
 # "Open in Terminal"
-sudo apt-get install nautilus-open-terminal
+sudo apt-get -y install nautilus-open-terminal
 
 # PostgreSQL
 sudo apt-get -y install postgresql postgresql-contrib libpq-dev
