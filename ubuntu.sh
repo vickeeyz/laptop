@@ -2,7 +2,7 @@
 
 # Inspired by https://github.com/thoughtbot/laptop
 
-set -e
+# set -e
 
 # Add PPAs
 sudo add-apt-repository -y ppa:git-core/ppa
