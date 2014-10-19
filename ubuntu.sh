@@ -16,7 +16,8 @@ sudo apt-get update
 sudo apt-get -y install zsh
 chsh -s $(which zsh)
 
-sudo apt-get -y install build-essential libssl-dev m4
+sudo apt-get -y install build-essential libssl-dev
+sudo apt-get -y install m4 # Possibly to fix the failure to build ocamlfind
 
 # git
 sudo apt-get -y install git
