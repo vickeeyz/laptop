@@ -8,3 +8,5 @@ curl -L https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/mas
 # Google Chrome
 
 # SmartGit/Hg
+
+# Sublime Text 3
