@@ -28,6 +28,9 @@ curl -L http://install.ohmyz.sh | zsh
 # Mercurial
 sudo apt-get -y install mercurial
 
+# Emacs
+sudo apt-get -y install emacs
+
 # ag
 sudo apt-get -y install silversearcher-ag
 
