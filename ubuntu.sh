@@ -4,6 +4,8 @@
 
 # set -e
 
+whereiwas=$(pwd)
+
 # Add PPAs
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
@@ -54,6 +56,7 @@ if [[ ! -d ~/.rbenv ]]; then
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 else
   cd ~/.rbenv && git pull
+  cd "$whereiwas"
 fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -65,6 +68,7 @@ if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
     ~/.rbenv/plugins/ruby-build
 else
   cd ~/.rbenv/plugins/ruby-build && git pull
+  cd "$whereiwas"
 fi
 
 # Ruby
@@ -130,4 +134,5 @@ if [[ ! -d ~/.fzf ]]; then
   ~/.fzf/install
 else
   cd ~/.fzf && git pull
+  cd "$whereiwas"
 fi
