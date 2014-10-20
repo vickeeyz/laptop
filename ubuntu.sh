@@ -123,3 +123,11 @@ sudo dpkg -i /tmp/sbt-${SBT_VERSION}.deb
 
 sudo apt-get update
 sudo apt-get -y install sbt
+
+# fzf, requires Ruby
+if [[ ! -d ~/.fzf ]]; then
+  git clone https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+else
+  cd ~/.fzf && git pull
+fi
