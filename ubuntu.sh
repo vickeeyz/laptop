@@ -32,11 +32,6 @@ sudo apt-get -y install mercurial
 
 # Vim
 sudo apt-get -y install vim
-vim +PluginInstall +qall # Install plugins.
-  # Must be terminal Vim, so that the next command won't be run until this finishes.
-sudo apt-get -y install cmake python-dev # Required by YouCompleteMe
-cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer && cd "$whereiwas"
-cd ~/.vim/bundle/vimproc.vim && make && cd "$whereiwas"
 
 # Vundle
 if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
