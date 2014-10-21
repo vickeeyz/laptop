@@ -101,7 +101,7 @@ gem install bundler --no-document
 sudo apt-get -y install haskell-platform
 cabal update
 
-# Darcs
+cabal install ghc-mod
 cabal install darcs
 
 # OCaml
