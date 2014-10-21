@@ -87,6 +87,9 @@ gem install bundler --no-document
 sudo apt-get -y install haskell-platform
 cabal update
 
+# Darcs
+cabal install darcs
+
 # OCaml
 OCAML_VERSION=4.01.0
 
