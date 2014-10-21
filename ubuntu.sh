@@ -30,6 +30,17 @@ curl -L http://install.ohmyz.sh | zsh
 # Mercurial
 sudo apt-get -y install mercurial
 
+# Vim
+sudo apt-get -y install vim
+
+# Vundle
+if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+else
+  cd ~/.vim/bundle/Vundle.vim && git pull
+  cd "$whereiwas"
+fi
+
 # Emacs
 sudo apt-get -y install emacs
 
