@@ -41,6 +41,9 @@ else
   cd "$whereiwas"
 fi
 
+# Required by YouCompleteMe
+sudo apt-get -y install cmake python-dev
+
 # Emacs
 sudo apt-get -y install emacs
 
