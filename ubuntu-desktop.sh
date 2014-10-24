@@ -12,6 +12,9 @@ curl -L https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/mas
 # GVim
 sudo apt-get -y install vim-gnome
 
+# gitg
+sudo apt-get -y install gitg
+
 # SmartGit/Hg
 
 # Sublime Text 3
