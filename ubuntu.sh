@@ -6,6 +6,10 @@
 
 whereiwas=$(pwd)
 
+# In order to have the add-apt-repository command
+sudo apt-get update
+sudo apt-get -y install software-properties-common
+
 # Add PPAs
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:chris-lea/node.js
