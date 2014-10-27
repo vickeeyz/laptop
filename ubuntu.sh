@@ -150,6 +150,9 @@ sudo apt-get -y install sbt
 # http://doc.rust-lang.org/guide.html
 curl -s https://static.rust-lang.org/rustup.sh | sudo sh
 
+# LaTeX
+sudo apt-get -y install texlive
+
 # fzf, requires Ruby
 if [[ ! -d ~/.fzf ]]; then
   git clone https://github.com/junegunn/fzf.git ~/.fzf
