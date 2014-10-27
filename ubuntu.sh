@@ -146,6 +146,10 @@ sudo dpkg -i /tmp/sbt-${SBT_VERSION}.deb
 sudo apt-get update
 sudo apt-get -y install sbt
 
+# Rust
+# http://doc.rust-lang.org/guide.html
+curl -s https://static.rust-lang.org/rustup.sh | sudo sh
+
 # fzf, requires Ruby
 if [[ ! -d ~/.fzf ]]; then
   git clone https://github.com/junegunn/fzf.git ~/.fzf
