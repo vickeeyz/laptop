@@ -104,6 +104,15 @@ gem update --system # Update the RubyGems system software
 # Bundler
 gem install bundler --no-document
 
+# fzf, requires Ruby
+if [[ ! -d ~/.fzf ]]; then
+  git clone https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+else
+  cd ~/.fzf && git pull
+  cd "$whereiwas"
+fi
+
 # Haskell
 sudo apt-get -y install haskell-platform
 cabal update
@@ -160,12 +169,3 @@ curl -s https://static.rust-lang.org/rustup.sh | sudo sh
 sudo apt-get -y install texlive
 sudo apt-get -y install texlive-latex-extra  # contains mathastext.sty
 sudo apt-get -y install texlive-math-extra   # contains stmaryrd.sty
-
-# fzf, requires Ruby
-if [[ ! -d ~/.fzf ]]; then
-  git clone https://github.com/junegunn/fzf.git ~/.fzf
-  ~/.fzf/install
-else
-  cd ~/.fzf && git pull
-  cd "$whereiwas"
-fi
