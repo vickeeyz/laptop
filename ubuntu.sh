@@ -131,6 +131,9 @@ eval $(opam config env)
 
 opam install -y core utop
 
+# Coq
+sudo apt-get -y install coq proofgeneral
+
 # Node.js
 sudo apt-get -y install nodejs
 
