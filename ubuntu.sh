@@ -66,14 +66,14 @@ sudo apt-get -y install postgresql postgresql-contrib libpq-dev
 # Redis
 sudo apt-get -y install redis-server
 
-# Python
-sudo apt-get -y install python-setuptools  # Provides easy_install
-
 # nginx
 sudo apt-get -y install nginx
 
 # Heroku Toolbelt
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+# Python
+sudo apt-get -y install python-setuptools  # Provides easy_install
 
 # rbenv
 if [[ ! -d ~/.rbenv ]]; then
