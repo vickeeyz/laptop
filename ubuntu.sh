@@ -66,6 +66,9 @@ sudo apt-get -y install postgresql postgresql-contrib libpq-dev
 # Redis
 sudo apt-get -y install redis-server
 
+# Python
+sudo apt-get -y install python-setuptools  # Provides easy_install
+
 # nginx
 sudo apt-get -y install nginx
 
