@@ -146,7 +146,7 @@ sudo apt-get -y install ant
 
 # https://gist.github.com/visenger/5496675
 
-SCALA_VERSION=2.11.2
+SCALA_VERSION=2.11.4
 SBT_VERSION=0.13.5
 
 # Scala
