@@ -181,3 +181,4 @@ curl -s https://static.rust-lang.org/rustup.sh | sudo sh
 
 # Have to use this. Otherwise mathastext.sty can still not be found.
 # sudo apt-get -y install texlive-full
+sudo apt-get -y install tex-common texlive-base texlive-latex-recommended
