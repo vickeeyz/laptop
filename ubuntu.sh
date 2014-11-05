@@ -121,17 +121,17 @@ cabal install ghc-mod
 cabal install darcs
 
 # OCaml
-read -e -p "Heads up! About to install OCaml. Press Enter to continue."
+# read -e -p "Heads up! About to install OCaml. Press Enter to continue."
 
-OCAML_VERSION=4.02.1
+# OCAML_VERSION=4.02.1
 
-sudo apt-get -y install opam
+# sudo apt-get -y install opam
 
-opam init
-opam switch $OCAML_VERSION
-eval $(opam config env)
+# opam init
+# opam switch $OCAML_VERSION
+# eval $(opam config env)
 
-opam install -y core utop
+# opam install -y core utop
 
 # Coq
 sudo apt-get -y install coq proofgeneral
