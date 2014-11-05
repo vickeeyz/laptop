@@ -10,13 +10,14 @@ whereiwas=$(pwd)
 # sudo apt-get update
 # sudo apt-get -y install software-properties-common
 # For Ubuntu 12.04 LTS
-# sudo apt-get -y install python-software-properties
+sudo apt-get -y install python-software-properties
 
 # Add PPAs
 # sudo add-apt-repository -y ppa:git-core/ppa
 # sudo add-apt-repository -y ppa:chris-lea/node.js
 # sudo add-apt-repository -y ppa:nginx/stable
 # sudo add-apt-repository -y ppa:avsm/ppa
+sudo add-apt-repository -y ppa:cassou/emacs
 
 sudo apt-get update
 
@@ -54,7 +55,7 @@ fi
 sudo apt-get -y install cmake python-dev
 
 # Emacs
-sudo apt-get -y install emacs24
+sudo apt-get -y install emacs24 emacs24-el emacs24-common-non-dfsg
   # emacs resolves to emacs23 on Ubuntu 12.04
 
 # ag
