@@ -57,7 +57,8 @@ sudo apt-get -y install cmake python-dev
 sudo apt-get -y install emacs
 
 # ag
-sudo apt-get -y install silversearcher-ag
+# sudo apt-get -y install silversearcher-ag
+  # Not available in Ubuntu 12.04
 
 # PostgreSQL
 sudo apt-get -y install postgresql postgresql-contrib libpq-dev
