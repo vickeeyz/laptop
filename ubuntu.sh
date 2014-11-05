@@ -54,7 +54,8 @@ fi
 sudo apt-get -y install cmake python-dev
 
 # Emacs
-sudo apt-get -y install emacs
+sudo apt-get -y install emacs24
+  # emacs resolves to emacs23 on Ubuntu 12.04
 
 # ag
 # sudo apt-get -y install silversearcher-ag
