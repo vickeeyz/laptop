@@ -30,7 +30,7 @@ sudo apt-get -y install m4 # Possibly to fix the failure to build ocamlfind
 # git
 sudo apt-get -y install git
 
-# oh-my-zsh
+# oh-my-zsh, requires git
 rm -rf ~/.oh-my-zsh
 curl -L http://install.ohmyz.sh | zsh
 
