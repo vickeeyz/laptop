@@ -120,7 +120,8 @@ sudo apt-get -y install haskell-platform
 cabal update
 
 cabal install ghc-mod
-cabal install darcs
+# cabal install darcs
+  # Failed with GHC 7.6.3
 
 # OCaml
 # read -e -p "Heads up! About to install OCaml. Press Enter to continue."
