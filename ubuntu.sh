@@ -7,8 +7,8 @@ set -e
 whereiwas=$(pwd)
 
 # In order to have the add-apt-repository command
-sudo apt-get update
-sudo apt-get -y install software-properties-common
+# sudo apt-get update
+# sudo apt-get -y install software-properties-common
 # For Ubuntu 12.04 LTS
 # sudo apt-get -y install python-software-properties
 
