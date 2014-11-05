@@ -124,6 +124,8 @@ cabal install ghc-mod
 cabal install darcs
 
 # OCaml
+read -e -p "Heads up! About to install OCaml. Press Enter to continue."
+
 OCAML_VERSION=4.01.0
 
 sudo apt-get -y install opam
