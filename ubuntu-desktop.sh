@@ -19,6 +19,9 @@ sudo apt-get -y install gitg
 
 # Sublime Text 3
 
+# "Open in Terminal"
+sudo apt-get -y install nautilus-open-terminal
+
 # VirtualBox
 #
 # Ubuntu/Debian users might want to install the dkms package to ensure that the
