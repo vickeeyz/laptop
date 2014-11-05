@@ -120,7 +120,8 @@ fi
 sudo apt-get -y install haskell-platform
 cabal update
 
-cabal install ghc-mod
+# cabal install ghc-mod
+  # Failed with GHC 7.4.1 (shipped with Ubuntu 12.04)
 # cabal install darcs
   # Failed with GHC 7.6.3
 
