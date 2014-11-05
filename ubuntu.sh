@@ -31,8 +31,10 @@ sudo apt-get -y install m4 # Possibly to fix the failure to build ocamlfind
 sudo apt-get -y install git
 
 # oh-my-zsh, requires git
-rm -rf ~/.oh-my-zsh
-curl -L http://install.ohmyz.sh | zsh
+#
+# TODO: Temporarily commented out, because the following two lines throw an error.
+# rm -rf ~/.oh-my-zsh
+# curl -L http://install.ohmyz.sh | zsh
 
 # Mercurial
 sudo apt-get -y install mercurial
