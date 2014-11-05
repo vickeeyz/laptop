@@ -126,7 +126,7 @@ cabal install darcs
 # OCaml
 read -e -p "Heads up! About to install OCaml. Press Enter to continue."
 
-OCAML_VERSION=4.01.0
+OCAML_VERSION=4.02.1
 
 sudo apt-get -y install opam
 
