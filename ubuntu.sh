@@ -13,10 +13,10 @@ sudo apt-get -y install software-properties-common
 # sudo apt-get -y install python-software-properties
 
 # Add PPAs
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo add-apt-repository -y ppa:chris-lea/node.js
-sudo add-apt-repository -y ppa:nginx/stable
-sudo add-apt-repository -y ppa:avsm/ppa
+# sudo add-apt-repository -y ppa:git-core/ppa
+# sudo add-apt-repository -y ppa:chris-lea/node.js
+# sudo add-apt-repository -y ppa:nginx/stable
+# sudo add-apt-repository -y ppa:avsm/ppa
 
 sudo apt-get update
 
