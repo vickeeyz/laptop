@@ -77,6 +77,7 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # Python
 sudo apt-get -y install python-setuptools  # Provides easy_install
+sudo easy_install hg-git
 
 # rbenv
 if [[ ! -d ~/.rbenv ]]; then
