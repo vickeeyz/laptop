@@ -7,17 +7,14 @@ set -e
 whereiwas=$(pwd)
 
 # In order to have the add-apt-repository command
-# sudo apt-get update
-# sudo apt-get -y install software-properties-common
-# For Ubuntu 12.04 LTS
-sudo apt-get -y install python-software-properties
+sudo apt-get update
+sudo apt-get -y install software-properties-common
 
 # Add PPAs
-sudo add-apt-repository -y ppa:git-core/ppa
+# sudo add-apt-repository -y ppa:git-core/ppa
 # sudo add-apt-repository -y ppa:chris-lea/node.js
 # sudo add-apt-repository -y ppa:nginx/stable
 # sudo add-apt-repository -y ppa:avsm/ppa
-sudo add-apt-repository -y ppa:cassou/emacs
 
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -56,8 +53,7 @@ fi
 sudo apt-get -y install cmake python-dev
 
 # Emacs
-sudo apt-get -y install emacs24 emacs24-el emacs24-common-non-dfsg
-  # emacs resolves to emacs23 on Ubuntu 12.04
+sudo apt-get -y install emacs
 
 # ag
 sudo apt-get -y install silversearcher-ag
@@ -133,8 +129,7 @@ sudo tar xvf /tmp/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
 sudo /usr/local/haskell/ghc-7.8.3-x86_64/bin/activate-hs
 cd "$whereiwas"
 
-# cabal install ghc-mod
-  # Failed with GHC 7.4.1 (shipped with Ubuntu 12.04)
+cabal install ghc-mod
 # cabal install darcs
   # Failed with GHC 7.6.3
 
