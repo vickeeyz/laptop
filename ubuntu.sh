@@ -36,7 +36,7 @@ sudo apt-get -y install git
 #
 # TODO: Temporarily commented out, because the following two lines throw an error.
 # rm -rf ~/.oh-my-zsh
-# curl -L http://install.ohmyz.sh | zsh
+# curl -L http://install.ohmyz.sh | sh
 
 # Mercurial
 sudo apt-get -y install mercurial
