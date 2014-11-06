@@ -60,8 +60,7 @@ sudo apt-get -y install emacs24 emacs24-el emacs24-common-non-dfsg
   # emacs resolves to emacs23 on Ubuntu 12.04
 
 # ag
-# sudo apt-get -y install silversearcher-ag
-  # Not available in Ubuntu 12.04
+sudo apt-get -y install silversearcher-ag
 
 # PostgreSQL
 sudo apt-get -y install postgresql postgresql-contrib libpq-dev
