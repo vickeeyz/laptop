@@ -20,6 +20,7 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:cassou/emacs
 
 sudo apt-get update
+sudo apt-get -y upgrade
 
 # Zsh
 sudo apt-get -y install zsh
