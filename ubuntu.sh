@@ -121,7 +121,17 @@ fi
 
 # Haskell
 sudo apt-get -y install haskell-platform
+  # GHC 7.4.1 for Ubuntu 12.04
+  # GHC 7.6.3 for Ubuntu 14.04
 cabal update
+
+# Install GHC 7.8.3
+# https://www.haskell.org/platform/linux.html#binary
+wget -P /tmp https://www.haskell.org/platform/download/2014.2.0.0/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
+cd /
+sudo tar xvf /tmp/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
+sudo /usr/local/haskell/ghc-7.8.3-x86_64/bin/activate-hs
+cd "$whereiwas"
 
 # cabal install ghc-mod
   # Failed with GHC 7.4.1 (shipped with Ubuntu 12.04)
