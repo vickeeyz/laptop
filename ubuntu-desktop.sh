@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 whereiwas=$(pwd)
 
 # Base16 for Gnome Terminal
