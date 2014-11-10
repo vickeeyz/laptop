@@ -133,9 +133,7 @@ sudo tar xvf /tmp/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
 sudo /usr/local/haskell/ghc-7.8.3-x86_64/bin/activate-hs
 cd "$whereiwas"
 
-cabal install ghc-mod
-# cabal install darcs
-  # Failed with GHC 7.6.3
+# Don't ever thinking of installing Cabal packages! They are so brittle...
 
 # OCaml
 # read -e -p "Heads up! About to install OCaml. Press Enter to continue."
