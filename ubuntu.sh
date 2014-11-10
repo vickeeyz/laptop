@@ -185,7 +185,7 @@ curl -s https://static.rust-lang.org/rustup.sh | sudo sh
 # LaTeX
 
 sudo apt-get -y install texlive
-# sudo apt-get -y install texlive-latex-extra  # contains mathastext.sty
+sudo apt-get -y install texlive-latex-extra  # contains mathastext.sty
 sudo apt-get -y install texlive-math-extra   # contains stmaryrd.sty
 
 # Have to use this. Otherwise mathastext.sty can still not be found.
