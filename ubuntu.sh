@@ -67,6 +67,10 @@ sudo apt-get -y install redis-server
 # nginx
 sudo apt-get -y install nginx
 
+# Apache2
+sudo apt-get -y install apache2-utils
+  # Provides the `htpasswd` command, which is needed to configure phpPgAdmin
+
 # Heroku Toolbelt
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
