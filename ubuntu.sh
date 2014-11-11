@@ -101,6 +101,10 @@ fi
 # Ruby
 RUBY_VERSION="$(curl -sSL http://ruby.thoughtbot.com/latest)"
 
+# Possible cure for:
+# ~/.rbenv/versions/2.1.4/lib/ruby/2.1.0/irb/completion.rb:9:in `require': cannot load such file -- readline (LoadError)
+sudo apt-get -y install libreadline-dev
+
 rbenv install --skip-existing "$RUBY_VERSION"
 rbenv global "$RUBY_VERSION"
 rbenv rehash
