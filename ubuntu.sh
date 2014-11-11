@@ -103,6 +103,7 @@ RUBY_VERSION="$(curl -sSL http://ruby.thoughtbot.com/latest)"
 
 # Possible cure for:
 # ~/.rbenv/versions/2.1.4/lib/ruby/2.1.0/irb/completion.rb:9:in `require': cannot load such file -- readline (LoadError)
+# http://vvv.tobiassjosten.net/ruby/readline-in-ruby-with-rbenv/
 sudo apt-get -y install libreadline-dev
 
 rbenv install --skip-existing "$RUBY_VERSION"
@@ -189,7 +190,6 @@ sudo apt-get -y install erlang
 curl -s https://static.rust-lang.org/rustup.sh | sudo sh
 
 # LaTeX
-
 sudo apt-get -y install texlive
 sudo apt-get -y install texlive-latex-extra  # contains mathastext.sty
 sudo apt-get -y install texlive-math-extra   # contains stmaryrd.sty
