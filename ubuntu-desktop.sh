@@ -32,3 +32,9 @@ sudo apt-get -y install nautilus-open-terminal
 # https://www.virtualbox.org/wiki/Linux_Downloads
 sudo apt-get -y install virtualbox
 sudo apt-get -y install dkms
+
+# Android Studio
+if [[ -f /usr/local/android-studio/bin/studio.sh ]]
+then
+  sudo ln -s --force /usr/local/android-studio/bin/studio.sh /usr/local/bin/android-studio
+fi
