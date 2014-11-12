@@ -4,8 +4,6 @@
 
 set -e
 
-whereiwas=$(pwd)
-
 # In order to have the add-apt-repository command
 sudo apt-get update
 sudo apt-get -y install software-properties-common
@@ -46,7 +44,7 @@ if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 else
   cd ~/.vim/bundle/Vundle.vim && git pull
-  cd "$whereiwas"
+  cd -
 fi
 
 # Required by YouCompleteMe
@@ -83,7 +81,7 @@ if [[ ! -d ~/.rbenv ]]; then
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 else
   cd ~/.rbenv && git pull
-  cd "$whereiwas"
+  cd -
 fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -95,7 +93,7 @@ if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
     ~/.rbenv/plugins/ruby-build
 else
   cd ~/.rbenv/plugins/ruby-build && git pull
-  cd "$whereiwas"
+  cd -
 fi
 
 # Ruby
@@ -121,7 +119,7 @@ if [[ ! -d ~/.fzf ]]; then
   ~/.fzf/install
 else
   cd ~/.fzf && git pull
-  cd "$whereiwas"
+  cd -
 fi
 
 # Haskell
@@ -136,7 +134,7 @@ wget -P /tmp https://www.haskell.org/platform/download/2014.2.0.0/haskell-platfo
 cd /
 sudo tar xvf /tmp/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
 sudo /usr/local/haskell/ghc-7.8.3-x86_64/bin/activate-hs
-cd "$whereiwas"
+cd -
 
 # Don't ever thinking of installing Cabal packages! They are so brittle...
 
