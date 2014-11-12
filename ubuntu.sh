@@ -10,6 +10,7 @@ sudo apt-get -y install software-properties-common
 
 # Add PPAs
 # sudo add-apt-repository -y ppa:git-core/ppa
+sudo add-apt-repository -y ppa:webupd8team/java
 # sudo add-apt-repository -y ppa:chris-lea/node.js
 # sudo add-apt-repository -y ppa:nginx/stable
 # sudo add-apt-repository -y ppa:avsm/ppa
@@ -158,7 +159,8 @@ sudo apt-get -y install coq proofgeneral
 sudo apt-get -y install nodejs
 
 # Java
-sudo apt-get -y install default-jdk
+# sudo apt-get -y install default-jdk
+sudo apt-get -y install oracle-java7-installer
 sudo apt-get -y install ant
 
 # https://gist.github.com/visenger/5496675
