@@ -57,6 +57,9 @@ sudo apt-get -y install emacs
 # ag
 sudo apt-get -y install silversearcher-ag
 
+# tree
+sudo apt-get -y install tree
+
 # PostgreSQL
 sudo apt-get -y install postgresql postgresql-contrib libpq-dev
 
