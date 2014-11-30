@@ -161,6 +161,9 @@ sudo apt-get -y install coq proofgeneral
 # Node.js
 sudo apt-get -y install nodejs
 
+# PhamtomJS
+sudo apt-get -y install phantomjs
+
 # Java
 # sudo apt-get -y install default-jdk
 sudo apt-get -y install oracle-java7-installer
