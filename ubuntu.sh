@@ -160,6 +160,7 @@ sudo apt-get -y install coq proofgeneral
 
 # Node.js
 sudo apt-get -y install nodejs
+sudo apt-get -y install npm
 
 # PhamtomJS
 sudo apt-get -y install phantomjs
