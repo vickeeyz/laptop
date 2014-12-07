@@ -1,6 +1,6 @@
 namespace :install do
   desc "Install Erlang"
   task :erlang do
-    system "sudo apt-get -y install erlang"
+    install_package "erlang"
   end
 end
