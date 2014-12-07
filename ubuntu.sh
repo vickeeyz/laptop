@@ -175,7 +175,7 @@ sudo apt-get -y install phantomjs
 
 # Java
 # sudo apt-get -y install default-jdk
-sudo apt-get -y install oracle-java7-installer
+sudo apt-get -y install oracle-java8-installer
 sudo apt-get -y install ant
 
 # https://gist.github.com/visenger/5496675
