@@ -188,12 +188,3 @@ sudo dpkg -i /tmp/sbt-${SBT_VERSION}.deb
 
 sudo apt-get update
 sudo apt-get -y install sbt
-
-# LaTeX
-sudo apt-get -y install texlive
-sudo apt-get -y install texlive-latex-extra  # contains mathastext.sty
-sudo apt-get -y install texlive-math-extra   # contains stmaryrd.sty
-
-# Have to use this. Otherwise mathastext.sty can still not be found.
-# sudo apt-get -y install texlive-full
-# sudo apt-get -y install tex-common texlive-base texlive-latex-recommended
