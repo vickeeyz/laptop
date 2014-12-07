@@ -16,6 +16,10 @@ sudo apt-get -y install vim-gnome
 # sudo apt-get -y install gitg
 
 # SmartGit/Hg
+smartgit_version=6_5_1
+smartgit_filename=smartgit-${smartgit_version}.deb
+wget -P /tmp http://www.syntevo.com/download/smartgit/${smartgit_filename}
+sudo dpkg -i /tmp/${smartgit_filename}
 
 # Sublime Text 3
 
