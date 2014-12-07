@@ -118,6 +118,10 @@ gem update --system # Update the RubyGems system software
 gem install bundler --no-document
 
 # fzf, requires Ruby
+# fzf depends on the 'curses' gem, which depends on the 'libncurses-dev'
+# library. But since Ruby 2.1, curses was removed from Ruby standard library. :(
+# https://github.com/junegunn/fzf/wiki/Installing-curses-gem
+sudo apt-get -y install libncurses5-dev
 if [[ ! -d ~/.fzf ]]; then
   git clone https://github.com/junegunn/fzf.git ~/.fzf
   ~/.fzf/install
