@@ -162,14 +162,6 @@ cd -
 # Coq
 sudo apt-get -y install coq proofgeneral
 
-# Node.js
-# Install nvm
-curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
-# Need to source .bashrc to start using nvm
-. ~/.bashrc
-# This installs node as well as npm
-nvm install stable
-
 # PhamtomJS
 sudo apt-get -y install phantomjs
 
