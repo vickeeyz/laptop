@@ -7,7 +7,7 @@ def url(*urls)
   end
 end
 
-def install_package(*packages)
+def package(*packages)
   packages.each do |package|
     system "sudo apt-get -y install #{package}"
   end
