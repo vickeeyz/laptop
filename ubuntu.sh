@@ -189,13 +189,6 @@ sudo dpkg -i /tmp/sbt-${SBT_VERSION}.deb
 sudo apt-get update
 sudo apt-get -y install sbt
 
-# Erlang
-sudo apt-get -y install erlang
-
-# Rust
-# http://doc.rust-lang.org/guide.html
-curl -s https://static.rust-lang.org/rustup.sh | sudo sh
-
 # LaTeX
 sudo apt-get -y install texlive
 sudo apt-get -y install texlive-latex-extra  # contains mathastext.sty
